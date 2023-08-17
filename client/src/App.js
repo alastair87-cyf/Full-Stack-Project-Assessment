@@ -2,13 +2,26 @@ import "./App.css";
 
 import VideoList from "./components/VideoList";
 
-import exampleResponse from "./exampleresponse.json";
+import videoData from "./exampleresponse.json";
 
 import React, { useState } from "react";
 
+function Video ({ id, title, url, rating }) { 
+  const splitVideoEmbedId = url => url.split("watch?v=").pop();
+  this.id = id;
+  this.title = title;
+  this.url = url;
+  this.rating = rating;
+  this.embedId = splitVideoEmbedId(url);
+  this.votes = 0;
+  this.show = true;
+}
+
+const loadVideoData = videoData => videoData.map(video => new Video(video));
+
 function App() {
-  const [videos, setVideos] = useState(exampleResponse);
-  console.log(videos);
+  const [videos, setVideos] = useState(loadVideoData(videoData));
+  // console.log(videos);
   return (
     <div className="App">
       <header className="App-header">

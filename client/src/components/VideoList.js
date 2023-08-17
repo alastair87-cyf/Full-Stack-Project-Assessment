@@ -3,9 +3,12 @@ import Video from "./Video";
 
 const VideoList = ({ videos, setVideos }) => (
   <div>
-    {videos.map((video) => (
-      <Video video={video} />
-    ))}
+    {console.log(videos)}
+    {videos
+      .filter((video) => video.show)
+      .map((video) => (
+        <Video video={video} />
+      ))}
   </div>
 );
 
