@@ -1,6 +1,6 @@
 import "./App.css";
 
-import Videos from "./components/Videos";
+import VideoList from "./components/VideoList";
 
 import exampleResponse from "./exampleresponse.json";
 
@@ -14,7 +14,7 @@ function App() {
       <header className="App-header">
         <h1>Video Recommendation</h1>
       </header>
-      <Videos videos={videos} setVideos={setVideos} />
+      <VideoList videos={videos} setVideos={setVideos} />
     </div>
   );
 }

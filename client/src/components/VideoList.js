@@ -1,7 +1,7 @@
 import React from "react";
 import Video from "./Video";
 
-const Videos = ({ videos, setVideos }) => (
+const VideoList = ({ videos, setVideos }) => (
   <div>
     {videos.map((video) => (
       <Video video={video} />
@@ -9,4 +9,4 @@ const Videos = ({ videos, setVideos }) => (
   </div>
 );
 
-export default Videos;
+export default VideoList;
