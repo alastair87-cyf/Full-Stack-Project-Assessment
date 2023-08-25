@@ -17,7 +17,9 @@
 				"firefox-devtools.vscode-firefox-debug",
 				"ms-edgedevtools.vscode-edge-devtools",
 				"esbenp.prettier-vscode",
-				"unifiedjs.vscode-mdx"
+				"unifiedjs.vscode-mdx",
+				"Postman.postman-for-vscode",
+				"TabNine.tabnine-vscode"
 			]
 		}
 	}
