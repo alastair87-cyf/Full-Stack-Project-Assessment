@@ -3,7 +3,7 @@
 {
 	"name": "alastair87/nodejs:lts",
 	
-	"image": "docker.io/alastair87/nodejs:lts",
+	"image": "git.alastair87.me/alastair87/nodejs:lts",
 	
 	"features": {
 		"ghcr.io/devcontainers/features/github-cli:1": {}
